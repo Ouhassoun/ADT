@@ -299,7 +299,7 @@ namespace Modern_Dashboard_Design
             if (!IsEmpty())
             {
 
-                SQLiteCommand cmd = new SQLiteCommand("update userFR set set Numero=@num,Nometprenom=@nometprenom,Matricule=@matricule,DateDeRecru=@dateRec,Grade=@grade,Fonction=@fonction,Affectation=@affectation where CIN=@cin", cnx);
+                SQLiteCommand cmd = new SQLiteCommand("update userFR set Numero=@num,Nometprenom=@nometprenom,Matricule=@matricule,DateDeRecru=@dateRec,Grade=@grade,Fonction=@fonction,Affectation=@affectation where CIN=@cin", cnx);
                 cmd.Parameters.AddWithValue("@num", txtnum.Text);
                 cmd.Parameters.AddWithValue("@cin", txtcin.Text);
                 cmd.Parameters.AddWithValue("@nometprenom", txtname.Text);
